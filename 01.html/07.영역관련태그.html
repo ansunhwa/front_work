@@ -9,7 +9,8 @@
             height: 200px;
             border: 1px solid;
         }
-        /* 크기지정 안하면 한 행을 모두 차지 (길~게) */
+        /* div 크기지정 안하면 한 행을 모두 차지 (길~게) */
+
         .red{
             background-color: rgb(230, 57, 57);
         }
@@ -23,9 +24,10 @@
          span {
             border: 1px dotted;
             width: 200px;
-            /* 인라인 요소에서는 가로, 세로 길이지정 불가(영역만 지정되기 때문에 변화없음) */
+            /* (span태그 모양)인라인 요소에서는 가로, 세로 길이지정 불가(영역만 지정되기 때문에 변화없음) */
         }
          
+
     </style>
     <title>영역관련 태그</title>
 </head>
@@ -36,7 +38,7 @@
                   (p, pre, h~, div...)
         인라인 요소 : content(내용)영역에 해당하는 부분만 영역 차지
                     줄바꿈이 적용되지 않아 옆으로 영역이 잡힘(다음줄로 넘기려면 br 작성)
-                    (img, b, mark, span,...)
+                    (img, b, mark, s, span,...)
     -->           
                     
     <h1>영역관련 태그</h1>
@@ -58,20 +60,25 @@
 
     <br>
     <hr>
-    <h2>div태그와 span태그의 차이점2 : 영역지정 방식</h2>
+    <h2>div태그(블럭요소)와 span태그(인라인요소)의 차이점2 : 영역지정 방식</h2>
     <h3>div 태그 : 사각형 박스로 영역 지정</h3>
     
     <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla consectetur quidem explicabo eveniet odio repellat blanditiis laudantium veritatis. Cumque officiis, totam perferendis officia molestiae voluptatem! Deleniti consequuntur molestias itaque?
     </div>
+    <!-- 영역지정된 클래스가 있음 -->
+
 
     <h3>span 태그 : 문장 단위로 영역지정</h3>
     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti cumque dolorem aliquam, cum aliquid corrupti totam sunt nemo repellat odio illum voluptas esse eum libero vero! Amet, iusto iure.</span>
-    
+    <!-- 영역지정이랑 상관없음 -->
+
+
     <h1>iframe</h1>
     <p>웹 문서 안에 다른 웹 페이지를 추가하는 태그(인라인 요소)</p>
     <iframe src="02.글자태그.html" width="800" height="600"></iframe>
     <br><br><br><br><br><br><br>
+
 
     <!-- 유튜브 : 소스복사하여 넣기 -->
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/TdAzSVJLlmg" title="[𝐇𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭] Y2K를 아세요? 싸이월드 감성 플레이리스트" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

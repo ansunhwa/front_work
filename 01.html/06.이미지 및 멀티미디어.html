@@ -11,6 +11,7 @@
     -->
     <h1> 이미지 관련 태그 </h1>
     <h3> *src 속성</h3>
+
     <!-- 상대 경로 -->
     <figure>
         <img src="resources/img/img01.jpg">
@@ -23,7 +24,9 @@
         <img src="C:\Users\TJ\ash\front_work\01.html\resources/img/img01.jpg">
         <figcaption>[그림 1] 스무디</figcaption>
     </figure>
+
 <hr>
+
     <h3>*alt 속성</h3>
     <p>
         - 이미지의 경로가 잘못되었거나 이미지를 제대로 표현하지 못할 경우 대체 텍스트의 용도
@@ -32,6 +35,7 @@
     <img src="resources/img/img.png" alt="귀여운 푸들 강아지">
     <br>
     <img src="resources/img/img02.jpg" alt="귀여운 푸들 강아지">
+    <!-- alt가 어떤 그림인지 읽어줌, 해놓으면 좋음 -->
 
 <hr>
     <h3>* width, height 속성</h3>
@@ -49,6 +53,7 @@
     <img src="resources/img/img01.jpg" width="25%" height="200">
 
     <hr>
+
     <h1>미디어 관련 태그</h1>
     <h3>오디오 관련 태그</h3>
     <!-- 
@@ -60,12 +65,15 @@
         <audio src="resources/audio/bgsound.mp3" controls autoplay loop></audio>
     
     <hr>
+
     <h3>비디오 관련 태그</h3>
     <!-- 
     <video src="비디오 위치" [controls autoplay autoplay loop width="" height="" poster="썸네일 이미지 경로"]></video> 
     -->
     <video src="resources/video/video1.mp4" controls width="300" height="400"
             poster="resources/img/img02.jpg"></video> 
+            <!-- poster 재생이 되지 않을 때 보여주는 그림 -->
+            <!-- 비디오는 사이즈 지정 해줄 수 있음 -->
 
 </body>
 </html>
