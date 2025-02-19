@@ -69,7 +69,62 @@
         #fs4{font-size: 2rem;} /*root 부모(의 글꼴 크기를 기준으로 결정*/
      </style>
 
-   
+     <hr>
+      <h3>font-weight : 글꼴의 두께 지정</h3>
+      <pre>
+        선택자 {
+            font-weight : normal | bold | bolder | lighter | 100 | 400...;
+        }
+      </pre>
+
+      <!-- ul>li>#fw$*4 -->
+      <ul>
+        <li>
+            <div>원래 굵기</div>
+            <div id="fw1">굵은 글꼴로 변경</div>
+            <div id="fw2">원래 굵기보다 더 굵게</div>
+            <div id="fw3">원래 굵기보다 더 가늘게</div>
+        </li>
+      </ul>
+
+      <!-- ---------------------style--------------------- -->
+       <style>
+            #fw1{ font-weight: bold;}
+            /* #fw2{ font-weight: bolder;} */
+            #fw2{ font-weight: 900;}
+            #fw3{font-weight: lighter;}
+       </style>
+       
+       <br>
+       <hr>
+
+       <h3>font-variant : 영문텍스트 문구를 작은 대문자로 변경할 때 사용</h3>
+       <pre>
+            선택자 {
+                font-variant : amll-caps;
+            }
+       </pre>
+       <p>I LOVE YOU</p>
+       <span>i love you</span> &nbsp;
+       <span id="fv">i love you</span>
+       <!-- ---------------------style--------------------- -->
+        <style>
+            #fv {font-variant: small-caps;}
+        </style>
+
+        <br>
+        <hr>
+
+        <h3>font-style : 텍스트를 기울임 글꼴로 사용</h3>
+        <pre>
+            선택자 {
+                font-style : normal | itelic | lblique;
+            }
+        </pre>
+
+        <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p style="font-style: oblique;">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+   <!-- <i> 태그로 넣어줘도 됨 -->
   
 
 </body>

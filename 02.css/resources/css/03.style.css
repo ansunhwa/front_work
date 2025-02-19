@@ -123,6 +123,7 @@ button:enabled{
 
 /*==========8. 부정 선택자=========== */
 #fall :not(p:first-of-type) {color: red;}
+/* p태그를 제외 한 나머지 */
 
 
 
