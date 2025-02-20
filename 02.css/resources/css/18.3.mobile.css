@@ -1,0 +1,23 @@
+/* body */
+body {
+    width: 100%;
+}
+/* header */
+header {
+    height: 60px;
+    line-height: 60px;
+}
+/* 본문 */
+section {
+    background-color: lightblue;
+}
+/* aside */
+aside {
+    height: 40px;
+    background-color: lightseagreen;
+    text-align: center;
+}
+/* footer */
+footer {
+    height: 30px;
+}

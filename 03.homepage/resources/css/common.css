@@ -1,0 +1,8 @@
+* {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;   /*링크 밑줄 없애기*/
+    color: black;
+}

@@ -18,10 +18,10 @@ body {
     background-clip: border-box; /* 기본값 */
 }
 #div2 {
-    background-clip: padding-box;
+    background-clip: padding-box; /*테두리를 제외한*/
 }
 #div3 {
-    background-clip: content-box;
+    background-clip: content-box;  /*컨텐츠 내용만*/
 }
 #bg-img {
     width: 70%;
@@ -40,12 +40,13 @@ body {
     background-size: 50% 50%;
     background-size: auto;  /*원래 사이즈*/
 
-    background-position: left top; /*left top기본값*/
+    background-position: left top; /*left top기본값 왼족 맨 위 기준*/
     background-position: center bottom;
     background-position: center center;
     background-position: 20% 30%;
 
     background-attachment: fixed;   /*scorll(기본값)*/
+    /*bady에 넣는다면 스크롤을 옮겨도 다 보이게 할 수있음*/
 }
 /*
 background: 색상 url(...) no-repeat center center / 사이즈

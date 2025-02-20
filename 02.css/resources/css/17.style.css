@@ -1,0 +1,61 @@
+header {text-align: center;}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+h1 {
+    background-color: lightgrey;
+    height: 100px;
+    line-height: 100px;
+}
+.menu-item {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    background: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#menu1 {
+    background-image: url(../img/음식1.jpg);
+}
+#menu2 {
+    background-image: url(../img/음식2.jpg);
+}
+#menu3 {
+    background-image: url(../img/음식3.jpg);
+}
+#menu4 {
+    background-image: url(../img/음식4.jpg);
+}
+#menu5 {
+    background-image: url(../img/음식5.jpg);
+}
+#menu6 {
+    background-image: url(../img/음식6.jpg);
+}
+#menu7 {
+    background-image: url(../img/음식7.jpg);
+}
+#menu8 {
+    background-image: url(../img/음식8.jpg);
+}
+#menu9 {
+    background-image: url(../img/음식9.jpg);
+}
+#menu10 {
+    background-image: url(../img/음식10.jpg);
+}
+h2 {
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+    text-shadow: 1px 1px black;
+}
+footer {
+    background-color: lightgray;
+    height: 50px;
+}

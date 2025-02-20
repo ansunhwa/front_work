@@ -1,0 +1,43 @@
+/* 전체 */
+* {
+    margin: 0;
+}
+body {
+    width: 950px;
+    margin: 0 auto;  /*마진없이. 한가운데로*/
+}
+
+/* 헤더 */
+header {
+    width: 950px;
+    height: 120px;
+    background-color: lightblue;
+    border: 1px solid;
+}
+h1 {
+    color: black;
+    text-align: center;
+    line-height: 120px;
+}
+
+/*본문*/
+section {
+    float: left;
+    width: 640px;
+    height: 500px;
+    background-color: lightpink;
+}
+aside {
+    float: right;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(214, 155, 163);
+}
+
+/* 푸터 */
+footer {
+    clear: both;
+    height: 120px;
+    background-color: lightgray;
+}
+

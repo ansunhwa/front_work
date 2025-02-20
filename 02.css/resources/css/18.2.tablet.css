@@ -1,0 +1,28 @@
+/* body */
+body {
+    width: 100%;
+}
+/* header */
+header {
+    height: 60px;
+    line-height: 60px;
+}
+/* 본문 */
+section {
+    float: left;
+    width: 70%;
+    height: 400px;
+    background-color: lightpink;
+}
+/* aside */
+aside {
+    float: left;
+    width: 30%;
+    height: 400px;
+    background-color: lightcoral;
+}
+/* footer */
+footer {
+    clear: both;
+    height: 30px;
+}

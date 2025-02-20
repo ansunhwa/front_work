@@ -1,0 +1,18 @@
+/* 전체적으로 통일된 부분만 */
+* {
+    margin: 0 auto;
+}
+header {
+    background-color: rgb(71, 71, 148);
+    text-align: center;    /*가로세로X*/
+}
+header>h1 {  /*헤더 밑에 있는 h1만!*/
+    color: white;
+}
+
+footer {
+    background-color: rgb(71, 71, 148);
+    color: white;
+    text-align: center;
+}
+
