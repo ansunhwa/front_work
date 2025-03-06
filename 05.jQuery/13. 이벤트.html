@@ -131,6 +131,66 @@
         })
     </script>
 
+    <br><hr>
+
+    <h3>* 일회성 이벤트 (one메소드)</h3>
+
+    <h6 id="test3">딱 한번만 이벤트 실행</h6>
+
+    <script>
+        $(()=> {
+            $('#test3').one('click',function() {
+                alert('처음이자 마지막 이벤트 실행');
+            })
+        })
+    </script>
+
+    <br><hr>
+
+    <h3>* 키보드 관련 이벤트</h3>
+
+    <p>
+        - keydown|keypress : 키가 눌려일 때 발생하는 이벤트<br>
+          > keydown : 키보드의 모든 키가 눌려질 때 발생<br>
+          > keypress : 키보드의 펑션키, 기능키, 한글 제외한 나머지 키가 눌려질 때 발생<br>
+        - keyup : 키를 눌렀다가 뗄떼 발생하는 이벤트
+    </p>
+
+    <input id="test4">
+
+    <script>
+        $(()=> {
+            $('#test4').keyup(function() {
+                console.log($(this).val());   //눌렀을때 눌린 글씨를 가지고옴
+                console.log($(this).val().length);
+            })
+        })
+    </script>
+
+    <br><hr>
+
+    <h3>* 동적으로 글자수 세기</h3>
+
+    150자 이내로 작성하시오<br>
+    <textarea cols='30' rows="5" id="content"></textarea>
+    <span id="count">0</span>/150
+
+    <script>
+        $(()=> {
+            $('#content').keyup(function() {
+               // $('#count').text($(this).val().length);
+               let textLength = $(this).val().length;
+               if(textLength <=150) {
+                $('#count').text($(this).val().length);
+               } else {
+                $(this).val($(this).val().substring(0,150));
+                $('#count').text(150);  //150글자 이내로 밖에 작성이 안됨 151은 짤림
+               }
+            })
+
+        })
+    </script>
+
 
 
 

@@ -1,0 +1,110 @@
+/* 전체 */
+* {margin: 0 auto;}
+
+a {
+    text-decoration: none;   /*링크 밑줄 없애기*/
+    color: black;
+}
+body {width: 1000px;}
+
+
+/* haeder */
+.logo {
+    float: left;
+    padding: 10px;
+}   
+header>div>img {
+    width: 100px; margin-top: 25px;
+}
+
+li {
+    float: right;
+    list-style: none;
+    width: 150px;
+    height: 50px;
+    
+}
+
+ .nav>li {
+    border: 1px solid;
+    margin: 20px;
+    font-weight: 800;
+    
+}  
+
+  #imgslide {
+    clear: both;
+    /* width: 1000px;
+    height: 270px;
+    margin: 10px;*/
+    padding-bottom: 10px;
+}   
+
+/* article */
+/* 왼쪽 */
+.notice {
+    width: 49%;
+    float: left;
+    line-height: 20px;
+}
+.notice>h2 {
+    text-align: center;
+}
+.table {
+    line-height: 30px;
+    border-collapse: collapse;
+
+}
+
+/* 오른쪽 */
+.partner {
+    width: 49%;
+    float: right;
+    height: 300px;
+
+}
+.partner>h2 {
+    text-align: center;
+}
+.partner_info>img {
+    text-align: center;
+    width: 470px;
+    height: 200px;
+}
+
+/* 하단아이콘 */
+.icon {
+    clear: both;
+    /* display: flex; */
+}
+section>div>img {
+    width: 90px;
+}
+
+.imgbtn {
+    width: 30%;
+    /* max-width: 30%; */
+     display: inline-block; 
+    padding: 10px;
+    text-align: center;
+}
+button {
+    border-radius: 10px;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+/* footter */
+footer {
+    background-color: rgb(0, 160, 253);
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+/*  */
+

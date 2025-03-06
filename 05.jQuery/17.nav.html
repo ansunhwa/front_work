@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+    <title>nav 애니메이션</title>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            width: 150px;
+            height: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(240, 128, 128);
+            margin: 5px;
+            width: 140px;
+            height: 50px;
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+    </style>
+
+    <script>
+        $(()=> {  //.stop를 넣으면 앞에 했던 행동들(animate)을 삭제해줌
+            let overColor = $(this).attr('data-bg');
+            console.log(overColor);
+            $('li>a').hover(function() {          //경계안 1초동안 #ADD8E6
+                $(this).stop()
+                        .animate({'background-color':overColor, 'color':'pink'}, 1000);
+            }, function() {       //경계밖
+                $(this).stop()
+                        .animate({'background-color':'#F08080', 'color':'black'}, 1000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a href='01.jQuery개요.html' data-bg="#F15F5F">home</a></li>
+        <li><a href='01.jQuery개요.html' data-bg="#F29661">about</a></li>
+        <li><a href='01.jQuery개요.html' data-bg="#F2CB61">protfolio</a></li>
+        <li><a href='01.jQuery개요.html' data-bg="#86E57F">contact</a></li>
+    </ul>
+
+
+    
+</body>
+</html>
